@@ -1,0 +1,70 @@
+#who { padding: 130px 56px; background: var(--stone); }
+.who-inner { display: grid; grid-template-columns: 1fr 1.7fr; gap: 100px; align-items: start; }
+.who-left { position: sticky; top: 110px; }
+.who-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(38px, 4vw, 62px); font-weight: 300;
+  line-height: 1.0; color: var(--ink); margin-top: 16px;
+}
+.who-title em { font-style: italic; color: var(--stroke); }
+.who-accent {
+  margin-top: 40px; padding: 22px 26px;
+  border: 1px solid var(--line-ls); border-left: 2px solid var(--stroke);
+  background: rgba(20,19,18,0.03);
+}
+.who-accent p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px; font-style: italic; line-height: 1.7; color: var(--stroke);
+}
+.who-right { display: flex; flex-direction: column; gap: 28px; }
+.body-p { font-size: 14.5px; line-height: 1.95; color: var(--ink-soft); }
+.body-p strong { color: var(--ink); font-weight: 400; }
+
+.trio { border: 1px solid var(--line-ls); }
+.trio-row {
+  padding: 22px 28px; border-bottom: 1px solid var(--line-l);
+  font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 300;
+  color: var(--ink); line-height: 1.4;
+  transition: background 0.3s, padding-left 0.3s; cursor: none;
+}
+.trio-row:last-child { border-bottom: none; }
+.trio-row:hover { background: var(--stone-2); padding-left: 40px; }
+.trio-row em { font-style: italic; color: var(--stroke); }
+
+.mission-box {
+  padding: 36px 40px; background: var(--stone-2);
+  border: 1px solid var(--line-ls); position: relative; overflow: hidden;
+}
+.mission-box::before {
+  content: '"'; position: absolute; top: -28px; left: 16px;
+  font-family: 'Cormorant Garamond', serif; font-size: 200px; font-weight: 300;
+  color: rgba(20,19,18,0.04); line-height: 1; pointer-events: none;
+}
+.mission-lbl {
+  font-family: 'Courier Prime', monospace; font-size: 9px;
+  letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--stroke); margin-bottom: 14px; opacity: 0.7;
+}
+.mission-txt {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(17px, 1.8vw, 24px); font-weight: 300;
+  font-style: italic; line-height: 1.55; color: var(--ink); position: relative; z-index: 1;
+}
+.who-tagline {
+  font-family: 'Cormorant Garamond', serif; font-size: 20px;
+  font-weight: 300; font-style: italic;
+  color: var(--stroke); text-align: right;
+  padding-top: 16px; border-top: 1px solid var(--line-ls);
+}
+
+.lbl-light {
+  font-family: 'Courier Prime', monospace; font-size: 9px;
+  letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--stroke); margin-bottom: 24px; opacity: 0.7;
+}
+
+@media (max-width: 1024px) {
+  #who { padding: 100px 24px; }
+  .who-inner { grid-template-columns: 1fr; gap: 48px; }
+  .who-left { position: static; }
+}

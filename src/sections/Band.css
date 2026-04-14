@@ -1,0 +1,25 @@
+.band-dark {
+  padding: 88px 56px; background: var(--charcoal);
+  position: relative; overflow: hidden;
+  display: flex; align-items: center; justify-content: center; text-align: center;
+}
+.band-grid {
+  position: absolute; inset: 0;
+  background-image: linear-gradient(var(--grid-d) 1px, transparent 1px),
+                    linear-gradient(90deg, var(--grid-d) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+.band-content { position: relative; z-index: 1; }
+.band-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(28px, 4.5vw, 62px); font-weight: 300;
+  font-style: italic; color: var(--plat); line-height: 1.2;
+}
+.band-quote span { color: var(--plat-mid); }
+.band-sub {
+  font-family: 'Courier Prime', monospace; font-size: 9.5px;
+  letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--plat-dim); margin-top: 24px;
+}
+
+@media (max-width: 1024px) { .band-dark { padding: 72px 24px; } }
