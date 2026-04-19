@@ -62,7 +62,6 @@
   letter-spacing: 0.3em; text-transform: uppercase;
   color: var(--stroke); margin-bottom: 24px; opacity: 0.7;
 }
-}
 
 @media (max-width: 1024px) {
   #who { padding: 100px 24px; }
