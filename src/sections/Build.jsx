@@ -60,9 +60,6 @@ export default function Build() {
         </div>
 
         <div className="build-final reveal">
-          <p className="build-final-q">
-            "We don't network.<br /><strong>We engineer networks.</strong>"
-          </p>
           <a href="mailto:as@alphantsnetwork.com" className="btn-ink">Begin the conversation</a>
         </div>
       </div>
