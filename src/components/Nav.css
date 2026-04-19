@@ -10,7 +10,7 @@ nav.dark  { background: rgba(19,20,21,0.96);    border-color: var(--line-d); bac
 
 .nav-logo-text { display: flex; flex-direction: column; gap: 1px; }
 .nav-brand {
-  font-family: 'Cormorant Garamond', serif; font-size: 14px; font-weight: 600;
+  font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 600;
   letter-spacing: 0.2em; text-transform: uppercase; transition: color 0.4s;
 }
 .nav-tagline {

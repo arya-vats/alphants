@@ -11,8 +11,6 @@ export default function What() {
       </div>
       <div className="cards-grid">
         <div className="card-light reveal">
-          <div className="card-num">01</div>
-          <div className="card-bgnum">01</div>
           <h3 className="card-name">Alphants Unlisted</h3>
           <p className="card-sub">Private events built around the people you need to meet</p>
           <p className="card-txt">
@@ -24,8 +22,6 @@ export default function What() {
           <div className="card-bar" />
         </div>
         <div className="card-light reveal rd1">
-          <div className="card-num">02</div>
-          <div className="card-bgnum">02</div>
           <h3 className="card-name">Alphants Originals</h3>
           <p className="card-sub">Our own gatherings, where every attendee adds value</p>
           <p className="card-txt">

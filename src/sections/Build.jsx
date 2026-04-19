@@ -6,22 +6,22 @@ const cards = [
     label: 'Commission an Event',
     title: 'Work Together',
     text: "Whether you're commissioning a single defining event or a series of strategic gatherings, this is where it begins. Tell us about the room you need to build.",
-    link: 'mailto:hello@alphants.com',
+    link: 'mailto:as@alphantsnetwork.com',
     linkText: 'Start the conversation',
   },
   {
     label: 'Join the Team',
     title: 'Careers',
     text: "Join a team of strategists, creators, and innovators redefining events. We're building something that matters — and we're looking for people who think the same way.",
-    link: 'mailto:careers@alphants.com',
+    link: 'mailto:as@alphantsnetwork.com',
     linkText: 'View opportunities',
   },
   {
     label: 'Get in Touch',
     title: 'Contact',
     text: 'Every significant architecture begins with a conversation. Reach us by phone, email, or wherever you find us online. We respond to every message personally.',
-    link: 'mailto:hello@alphants.com',
-    linkText: 'hello@alphants.com',
+    link: 'mailto:as@alphantsnetwork.com',
+    linkText: 'as@alphantsnetwork.com',
   },
 ];
 
@@ -63,7 +63,7 @@ export default function Build() {
           <p className="build-final-q">
             "We don't network.<br /><strong>We engineer networks.</strong>"
           </p>
-          <a href="mailto:hello@alphants.com" className="btn-ink">Begin the conversation</a>
+          <a href="mailto:as@alphantsnetwork.com" className="btn-ink">Begin the conversation</a>
         </div>
       </div>
     </section>

@@ -1,9 +1,8 @@
 #founder {
   padding: 130px 56px; background: var(--char-2);
-  display: grid; grid-template-columns: 1fr 1.8fr;
-  gap: 100px; align-items: start;
+  display: flex; justify-content: center;
 }
-.founder-left { position: sticky; top: 110px; }
+.founder-right { max-width: 720px; display: flex; flex-direction: column; gap: 28px; }
 
 .lbl-dark {
   font-family: 'Courier Prime', monospace; font-size: 9px;
@@ -66,6 +65,5 @@
 .founder-welcome p span { color: var(--plat-mid); }
 
 @media (max-width: 1024px) {
-  #founder { padding: 100px 24px; grid-template-columns: 1fr; gap: 48px; }
-  .founder-left { position: static; }
+  #founder { padding: 100px 24px; }
 }

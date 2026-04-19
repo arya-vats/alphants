@@ -23,10 +23,6 @@ export default function Hero() {
           </p>
         </div>
       </div>
-      <div className="hero-scroll">
-        <span>Scroll</span>
-        <div className="scroll-ln" />
-      </div>
     </section>
   );
 }
