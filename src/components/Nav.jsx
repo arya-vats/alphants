@@ -25,6 +25,7 @@ export default function Nav({ theme, activeSection }) {
           </li>
         ))}
       </ul>
+      <a href="#build" className="nav-cta">Build With Us</a>
     </nav>
   );
 }

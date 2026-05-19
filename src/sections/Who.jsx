@@ -32,7 +32,6 @@ export default function Who() {
             <p className="mission-lbl">Our Mission</p>
             <p className="mission-txt">"To architect spaces where no one is in the room by accident, and every connection matters."</p>
           </div>
-          <p className="who-tagline reveal">We don't network. We engineer networks.</p>
         </div>
       </div>
     </section>

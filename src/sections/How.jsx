@@ -40,8 +40,7 @@ export default function How() {
         </div>
         <p className="how-intro reveal">
           At Alphants Network, we approach events the way architects approach landmarks — with intent,
-          structure, and foresight. Each movement builds on the last. Nothing is ornamental.
-          Everything serves the experience.
+          structure, and foresight.
         </p>
       </div>
       <div className="steps">

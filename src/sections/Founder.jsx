@@ -6,6 +6,7 @@ export default function Founder() {
   return (
     <section id="founder">
       <div className="founder-right">
+        <p className="lbl-dark reveal">A Note from the Founder</p>
         <p className="founder-pull reveal">
           "The rooms were full, yet the outcomes were unclear. The conversations were loud, but the influence was{' '}
           <em>temporary.</em>
