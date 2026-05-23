@@ -36,7 +36,7 @@ export default function How() {
       <div className="how-top">
         <div>
           <p className="lbl-light reveal">How Influence Is Designed</p>
-          <h2 className="how-title reveal rd1">Five<br /><em>movements.</em><br />One outcome.</h2>
+          <h2 className="how-title reveal rd1">Five-step framework.<br />One outcome.</h2>
         </div>
         <p className="how-intro reveal">
           At Alphants Network, we approach events the way architects approach landmarks — with intent,

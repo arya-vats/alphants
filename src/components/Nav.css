@@ -10,17 +10,17 @@ nav.dark  { background: rgba(19,20,21,0.96);    border-color: var(--line-d); bac
 
 .nav-logo-text { display: flex; flex-direction: column; gap: 1px; }
 .nav-brand {
-  font-family: 'Cormorant Garamond', serif; font-size: 13px; font-weight: 600;
-  letter-spacing: 0.25em; text-transform: uppercase; transition: color 0.4s;
+  font-family: 'Cormorant Garamond', serif; font-size: 16px; font-weight: 600;
+  letter-spacing: 0.22em; text-transform: uppercase; transition: color 0.4s;
 }
 .nav-tagline {
-  font-family: 'Cormorant Garamond', serif; font-size: 9px;
-  letter-spacing: 0.18em; text-transform: uppercase; transition: color 0.4s;
+  font-family: 'Cormorant Garamond', serif; font-size: 11px;
+  letter-spacing: 0.16em; text-transform: uppercase; transition: color 0.4s;
 }
 .nav-links a {
-  font-family: 'Courier Prime', monospace; font-size: 10px;
-  letter-spacing: 0.18em; text-transform: uppercase;
-  text-decoration: none; padding: 6px 18px; cursor: none; transition: color 0.3s;
+  font-family: 'Courier Prime', monospace; font-size: 14px;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  text-decoration: none; padding: 8px 20px; cursor: none; transition: color 0.3s;
 }
 .nav-links a.active { font-weight: 700; }
 
@@ -31,9 +31,9 @@ nav.dark  .nav-tagline { color: var(--plat-dim); }
 
 .nav-links { display: flex; gap: 0; list-style: none; }
 .nav-links a {
-  font-family: 'Courier Prime', monospace; font-size: 12px;
-  letter-spacing: 0.16em; text-transform: uppercase;
-  text-decoration: none; padding: 6px 18px; cursor: none; transition: color 0.3s;
+  font-family: 'Courier Prime', monospace; font-size: 14px;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  text-decoration: none; padding: 8px 20px; cursor: none; transition: color 0.3s;
 }
 nav.light .nav-links a       { color: var(--ink-mid); }
 nav.light .nav-links a:hover { color: var(--ink); }
@@ -44,9 +44,9 @@ nav.light .nav-links a.active { color: var(--ink); }
 nav.dark  .nav-links a.active { color: var(--plat); }
 
 .nav-cta {
-  font-family: 'Courier Prime', monospace; font-size: 9px;
-  letter-spacing: 0.18em; text-transform: uppercase;
-  text-decoration: none; cursor: none; padding: 9px 22px; transition: all 0.3s;
+  font-family: 'Courier Prime', monospace; font-size: 12px;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  text-decoration: none; cursor: none; padding: 10px 26px; transition: all 0.3s;
 }
 nav.light .nav-cta       { color: var(--ink);  border: 1px solid var(--line-ls); }
 nav.light .nav-cta:hover { background: var(--ink);  color: var(--stone); }

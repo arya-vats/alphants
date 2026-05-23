@@ -6,8 +6,9 @@
 
 .lbl-dark {
   font-family: 'Courier Prime', monospace; font-size: 9px;
-  letter-spacing: 0.3em; text-transform: uppercase;
-  color: var(--plat-mid); margin-bottom: 24px;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: #b8924a; margin-bottom: 20px;
+  font-size: 15px;
 }
 
 .founder-visual {
