@@ -44,10 +44,11 @@
   font-family: 'Courier Prime', monospace; font-size: 9px;
   letter-spacing: 0.3em; text-transform: uppercase;
   color: var(--stroke); margin-bottom: 14px; opacity: 0.7;
+  font-size: 12px;
 }
 .mission-txt {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(17px, 1.8vw, 24px); font-weight: 300;
+  font-size: clamp(20px, 2.2vw, 28px); font-weight: 300;
   font-style: italic; line-height: 1.55; color: var(--ink); position: relative; z-index: 1;
 }
 .who-tagline {

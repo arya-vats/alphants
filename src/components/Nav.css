@@ -15,7 +15,8 @@ nav.dark  { background: rgba(19,20,21,0.96);    border-color: var(--line-d); bac
 }
 .nav-tagline {
   font-family: 'Cormorant Garamond', serif; font-size: 11px;
-  letter-spacing: 0.16em; text-transform: uppercase; transition: color 0.4s;
+  letter-spacing: 0.16em;  transition: color 0.4s;
+  font-style: italic;
 }
 .nav-links a {
   font-family: 'Courier Prime', monospace; font-size: 14px;
@@ -25,9 +26,9 @@ nav.dark  { background: rgba(19,20,21,0.96);    border-color: var(--line-d); bac
 .nav-links a.active { font-weight: 700; }
 
 nav.light .nav-brand   { color: var(--ink); }
-nav.light .nav-tagline { color: var(--ink-xsoft); }
+nav.light .nav-tagline { color: var(--ink-mid); }
 nav.dark  .nav-brand   { color: var(--plat); }
-nav.dark  .nav-tagline { color: var(--plat-dim); }
+nav.dark  .nav-tagline { color: var(--plat-mid); }
 
 .nav-links { display: flex; gap: 0; list-style: none; }
 .nav-links a {

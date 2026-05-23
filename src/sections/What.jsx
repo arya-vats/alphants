@@ -7,7 +7,7 @@ export default function What() {
     <section id="what">
       <div className="what-header">
         <p className="lbl-light reveal">What We Enable</p>
-        <h2 className="what-title reveal rd1">Built for the<br />right <em>people.</em><br />By design.</h2>
+        <h2 className="what-title reveal rd1">The right minds.<br />At the exact right <em>coordinates.</em></h2>
       </div>
       <div className="cards-grid">
         <div className="card-light reveal">
