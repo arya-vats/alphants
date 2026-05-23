@@ -37,12 +37,9 @@ export default function Build() {
             <h2 className="build-title reveal rd1">Design<br /><em>influence</em><br />together.</h2>
           </div>
           <div className="build-desc">
-            <p className="reveal">
-              Engagement is not forced. It is designed. Whether you're planning a defining event or
-              exploring a long-term partnership, the conversation starts here.
-            </p>
             <div className="build-stamp reveal rd1">
-              "No one is in the room by accident, and every connection matters."
+              "Engagement is not forced. It is designed. Whether you're planning a defining event or
+              exploring a long-term partnership, the conversation starts here."
             </div>
           </div>
         </div>

@@ -8,7 +8,7 @@
 .build-inner { position: relative; z-index: 1; }
 .build-top {
   display: grid; grid-template-columns: 1fr 1fr;
-  gap: 80px; margin-bottom: 80px; align-items: end;
+  gap: 80px; margin-bottom: 80px; align-items: center;
 }
 .build-title {
   font-family: 'Cormorant Garamond', serif;
@@ -16,13 +16,14 @@
   line-height: 0.92; color: var(--ink); margin-top: 16px;
 }
 .build-title em { font-style: italic; color: var(--stroke); }
-.build-desc { display: flex; flex-direction: column; gap: 24px; }
+.build-desc { display: flex; flex-direction: column; gap: 24px; margin-top: 8px; }
 .build-desc p { font-size: 14px; line-height: 1.95; color: var(--ink-soft); }
 .build-stamp {
-  font-family: 'Cormorant Garamond', serif; font-size: 17px;
+  font-family: 'Cormorant Garamond', serif; font-size: 21px;
   font-style: italic; color: var(--ink); line-height: 1.6;
-  padding: 24px 28px; border: 1px solid var(--line-ls);
+  padding: 42px 46px; border: 1px solid var(--line-ls);
   border-left: 2px solid var(--stroke); background: rgba(20,19,18,0.03);
+  margin-top: -12px; margin-left: -50px; max-width: calc(100% + 50px);
 }
 
 .build-cards {
