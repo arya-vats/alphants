@@ -38,8 +38,8 @@ export default function Build() {
           </div>
           <div className="build-desc">
             <div className="build-stamp reveal rd1">
-              "Engagement is not forced. It is designed. Whether you're planning a defining event or
-              exploring a long-term partnership, the conversation starts here."
+              "Whether curating a high-stakes gathering or laying the foundation for a lasting
+              partnership, the conversation starts here."
             </div>
           </div>
         </div>

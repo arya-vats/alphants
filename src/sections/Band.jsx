@@ -9,7 +9,6 @@ export default function Band() {
           We don't chase attention.<br />
           <span>We design relevance.</span>
         </p>
-        <p className="band-sub">Alphants Network · The Architecture of Influence</p>
       </div>
     </div>
   );
