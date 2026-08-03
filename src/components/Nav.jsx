@@ -1,4 +1,5 @@
 import './Nav.css';
+import logoUrl from '../assets/alphants.png';
 import Emblem from './Emblem';
 
 export default function Nav({ theme, activeSection }) {
@@ -13,7 +14,7 @@ export default function Nav({ theme, activeSection }) {
     <nav id="nav" className={theme}>
       <a className="nav-logo" href="#home" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 14 }}>
         <div className="nav-logo-text">
-          <img src="src/assets/alphants.png" alt="Alphants Network Logo" className="nav-logo-img" />
+          <img src={logoUrl} alt="Alphants Network Logo" className="nav-logo-img" />
         </div>
       </a>
 
