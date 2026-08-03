@@ -1,5 +1,10 @@
 #who { padding: 130px 56px; background: var(--stone); }
-.who-inner { display: grid; grid-template-columns: 1fr 1.7fr; gap: 100px; align-items: start; }
+.who-inner {
+  display: grid;
+  grid-template-columns: 0.9fr 1.4fr;
+  gap: 96px;
+  align-items: start;
+}
 .who-left { position: sticky; top: 110px; }
 .who-title {
   font-family: 'Cormorant Garamond', serif;
@@ -16,20 +21,50 @@
   font-family: 'Cormorant Garamond', serif;
   font-size: 15px; font-style: italic; line-height: 1.7; color: var(--stroke);
 }
-.who-right { display: flex; flex-direction: column; gap: 28px; }
-.body-p { font-size: 14.5px; line-height: 1.95; color: var(--ink-soft); }
+.who-right {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.who-left .mission-box {
+  margin-top: 32px;
+}
+.story-card {
+  padding: 34px 36px;
+  border: 1px solid var(--line-ls);
+  background: linear-gradient(180deg, rgba(20,19,18,0.025), rgba(20,19,18,0.01));
+}
+.body-p {
+  font-size: 14.5px;
+  line-height: 1.95;
+  color: var(--ink-soft);
+  margin: 0 0 18px;
+}
+.body-p:last-child { margin-bottom: 0; }
 .body-p strong { color: var(--ink); font-weight: 400; }
 
-.trio { border: 1px solid var(--line-ls); }
-.trio-row {
-  padding: 22px 28px; border-bottom: 1px solid var(--line-l);
-  font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 300;
-  color: var(--ink); line-height: 1.4;
-  transition: background 0.3s, padding-left 0.3s; cursor: none;
+.convener-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.8fr;
+  gap: 20px;
 }
-.trio-row:last-child { border-bottom: none; }
-.trio-row:hover { background: var(--stone-2); padding-left: 40px; }
-.trio-row em { font-style: italic; color: var(--stroke); }
+.definition-block {
+  padding: 24px 26px;
+  border: 1px solid var(--line-ls);
+  background: var(--stone-2);
+}
+.accent-block {
+  background: rgba(20,19,18,0.05);
+}
+.block-label {
+  font-family: 'Courier Prime', monospace;
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--stroke);
+  margin-bottom: 14px;
+  opacity: 0.82;
+}
 
 .mission-box {
   padding: 36px 40px; background: var(--stone-2);
@@ -68,4 +103,5 @@
   #who { padding: 100px 24px; }
   .who-inner { grid-template-columns: 1fr; gap: 48px; }
   .who-left { position: static; }
+  .convener-grid { grid-template-columns: 1fr; }
 }

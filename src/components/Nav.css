@@ -1,27 +1,43 @@
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 300;
   display: flex; align-items: center; justify-content: space-between;
-  padding: 20px 56px;
+  gap: 24px;
+  height: 78px;
+  padding: 0 56px;
   transition: background 0.45s, border-color 0.45s;
   border-bottom: 1px solid transparent;
 }
 nav.light { background: rgba(240,236,230,0.96); border-color: var(--line-l); backdrop-filter: blur(16px); }
 nav.dark  { background: rgba(19,20,21,0.96);    border-color: var(--line-d); backdrop-filter: blur(16px); }
 
-.nav-logo-text { display: flex; flex-direction: column; gap: 1px; }
+.nav-logo { display: flex; align-items: center; flex: 0 0 auto; }
+.nav-logo-text { display: flex; flex-direction: column; gap: 0; }
+.nav-logo-img {
+  width: 132px;
+  height: 78px;
+  display: block;
+  object-fit: contain;
+}
+.nav-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1px;
+  flex: 0 0 auto;
+}
 .nav-brand {
   font-family: 'Cormorant Garamond', serif; font-size: 16px; font-weight: 600;
   letter-spacing: 0.22em; text-transform: uppercase; transition: color 0.4s;
 }
 .nav-tagline {
   font-family: 'Cormorant Garamond', serif; font-size: 11px;
-  letter-spacing: 0.16em;  transition: color 0.4s;
+  letter-spacing: 0.16em; transition: color 0.4s;
   font-style: italic;
 }
 .nav-links a {
   font-family: 'Courier Prime', monospace; font-size: 14px;
   letter-spacing: 0.14em; text-transform: uppercase;
-  text-decoration: none; padding: 8px 20px; cursor: none; transition: color 0.3s;
+  text-decoration: none; padding: 8px 20px; cursor: pointer; transition: color 0.3s;
 }
 .nav-links a.active { font-weight: 700; }
 
@@ -30,29 +46,33 @@ nav.light .nav-tagline { color: var(--ink-mid); }
 nav.dark  .nav-brand   { color: var(--plat); }
 nav.dark  .nav-tagline { color: var(--plat-mid); }
 
-.nav-links { display: flex; gap: 0; list-style: none; }
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  flex: 1 1 auto;
+  margin: 0;
+  padding: 0;
+}
 .nav-links a {
   font-family: 'Courier Prime', monospace; font-size: 14px;
   letter-spacing: 0.14em; text-transform: uppercase;
-  text-decoration: none; padding: 8px 20px; cursor: none; transition: color 0.3s;
+  text-decoration: none;
+  padding: 8px 18px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-nav.light .nav-links a       { color: var(--ink-mid); }
-nav.light .nav-links a:hover { color: var(--ink); }
-nav.dark  .nav-links a       { color: var(--plat-mid); }
-nav.dark  .nav-links a:hover { color: var(--plat); }
+nav.light .nav-links a       { color: var(--ink-mid); border-color: var(--line-ls); }
+nav.light .nav-links a:hover { color: var(--ink); background: rgba(0,0,0,0.04); border-color: var(--ink); }
+nav.dark  .nav-links a       { color: var(--plat-mid); border-color: var(--line-ds); }
+nav.dark  .nav-links a:hover { color: var(--plat); background: rgba(255,255,255,0.04); border-color: var(--plat); }
 .nav-links a.active { font-weight: 700; }
-nav.light .nav-links a.active { color: var(--ink); }
-nav.dark  .nav-links a.active { color: var(--plat); }
-
-.nav-cta {
-  font-family: 'Courier Prime', monospace; font-size: 12px;
-  letter-spacing: 0.14em; text-transform: uppercase;
-  text-decoration: none; cursor: none; padding: 10px 26px; transition: all 0.3s;
-}
-nav.light .nav-cta       { color: var(--ink);  border: 1px solid var(--line-ls); }
-nav.light .nav-cta:hover { background: var(--ink);  color: var(--stone); }
-nav.dark  .nav-cta       { color: var(--plat); border: 1px solid var(--line-ds); }
-nav.dark  .nav-cta:hover { background: var(--plat); color: var(--charcoal); }
+nav.light .nav-links a.active { color: var(--ink); background: rgba(0,0,0,0.04); border-color: var(--ink); }
+nav.dark  .nav-links a.active { color: var(--plat); background: rgba(255,255,255,0.04); border-color: var(--plat); }
 
 @media (max-width: 1024px) {
   nav { padding: 18px 24px; }

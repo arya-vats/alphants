@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import Cursor from './components/Cursor';
 import Nav from './components/Nav';
 import Hero from './sections/Hero';
 import Who from './sections/Who';
@@ -13,7 +12,6 @@ import Footer from './sections/Footer';
 export default function App() {
   const [navTheme, setNavTheme] = useState('light');
   const [activeSection, setActiveSection] = useState('home');
-  const [onDark, setOnDark] = useState(false);
 
   useEffect(() => {
     const darkSectionIds = ['founder'];
@@ -35,7 +33,6 @@ export default function App() {
       if (ft && y >= ft.offsetTop) isDark = true;
 
       setNavTheme(isDark ? 'dark' : 'light');
-      setOnDark(isDark);
 
       // Active section
       let current = 'home';
@@ -52,7 +49,6 @@ export default function App() {
 
   return (
     <>
-      <Cursor onDark={onDark} />
       <Nav theme={navTheme} activeSection={activeSection} />
       <Hero />
       <Who />
