@@ -7,7 +7,7 @@ export default function Nav({ theme, activeSection }) {
     { href: '#who', label: 'Who We Are' },
     { href: '#what', label: 'What We Enable' },
     { href: '#how', label: 'How We Design' },
-    { href: '#how', label: 'Build with Us' },
+    { href: '#build', label: 'Build with Us' },
   ];
 
   return (
@@ -20,7 +20,7 @@ export default function Nav({ theme, activeSection }) {
 
       <ul className="nav-links">
         {links.map(l => (
-          <li key={l.href}>
+          <li key={`${l.href}-${l.label}`}>
             <a href={l.href} className={`nav-lnk${activeSection === l.href.slice(1) ? ' active' : ''}`}>
               {l.label}
             </a>
