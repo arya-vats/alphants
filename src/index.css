@@ -41,6 +41,24 @@ body {
 ::-webkit-scrollbar-track { background: var(--stone); }
 ::-webkit-scrollbar-thumb { background: var(--stroke); }
 
+/* Cursor */
+.cursor {
+  position: fixed; width: 6px; height: 6px;
+  background: var(--ink); border-radius: 50%;
+  pointer-events: none; z-index: 9999;
+  transform: translate(-50%,-50%);
+  transition: background 0.3s;
+}
+.cursor-ring {
+  position: fixed; width: 30px; height: 30px;
+  border: 1px solid rgba(20,19,18,0.22); border-radius: 50%;
+  pointer-events: none; z-index: 9998;
+  transform: translate(-50%,-50%);
+  transition: all 0.35s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+.cursor.on-dark { background: var(--plat); }
+.cursor-ring.on-dark { border-color: rgba(228,228,228,0.22); }
+
 /* Animations */
 @keyframes fadeUp { from { opacity:0; transform:translateY(28px); } to { opacity:1; transform:translateY(0); } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }

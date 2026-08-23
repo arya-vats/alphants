@@ -16,18 +16,9 @@
 .card-light {
   background: var(--stone); padding: 56px 48px 68px;
   position: relative; overflow: hidden;
-  transition: background 0.4s; cursor: pointer;
+  transition: background 0.4s; cursor: none;
 }
 .card-light:hover { background: var(--stone-2); }
-.card-topline {
-  font-family: 'Courier Prime', monospace;
-  font-size: 10px;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  color: var(--stroke);
-  margin-bottom: 14px;
-  opacity: 0.75;
-}
 .card-name {
   font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 400;
   color: var(--ink); margin-bottom: 10px; line-height: 1.1;

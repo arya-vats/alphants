@@ -33,7 +33,7 @@
 .build-card {
   background: var(--stone); padding: 44px 38px 52px;
   position: relative; overflow: hidden;
-  transition: background 0.4s; cursor: pointer;
+  transition: background 0.4s; cursor: none;
 }
 .build-card:hover { background: var(--stone-2); }
 .bc-label {
@@ -49,7 +49,7 @@
 .bc-link {
   font-family: 'Courier Prime', monospace; font-size: 12px;
   letter-spacing: 0.14em; text-transform: uppercase;
-  color: var(--ink); text-decoration: none; cursor: pointer;
+  color: var(--ink); text-decoration: none; cursor: none;
   display: flex; align-items: center; gap: 12px; transition: gap 0.3s, color 0.3s;
 }
 .bc-link:hover { gap: 18px; color: var(--stroke); }
@@ -75,7 +75,7 @@
   background: var(--ink); color: var(--stone);
   font-family: 'Courier Prime', monospace; font-size: 10px;
   letter-spacing: 0.2em; text-transform: uppercase;
-  text-decoration: none; cursor: pointer; transition: background 0.3s;
+  text-decoration: none; cursor: none; transition: background 0.3s;
 }
 .btn-ink:hover { background: var(--stroke); }
 
