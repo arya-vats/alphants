@@ -11,7 +11,7 @@ export default function Who() {
 
       <div className="who-grid">
         <div className="who-dark reveal">
-          <p className="mission-lbl">Our Story</p>
+          <p className="mission-lbl">Our Mission</p>
           <p className="mission-txt">
             "To architect spaces where no one is in the room by accident, and every connection matters."
           </p>
@@ -32,22 +32,6 @@ export default function Who() {
           <p className="body-p final-p">
             That's the gap Alphants exists to fill.
           </p>
-
-          <div className="callout-row">
-            <div className="callout-block">
-              <p className="block-label">Strategic Convening</p>
-              <p className="body-p">
-                Not event management, not networking. The deliberate design of gatherings that build trust and
-                lasting relationships.
-              </p>
-            </div>
-            <div className="callout-block bordered">
-              <p className="block-label">What We Design</p>
-              <p className="body-p">
-                Not just gatherings, but the conditions that make influence possible.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>

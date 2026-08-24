@@ -16,7 +16,7 @@
 .card-light {
   background: var(--stone); padding: 56px 48px 68px;
   position: relative; overflow: hidden;
-  transition: background 0.4s; cursor: none;
+  transition: background 0.4s;
 }
 .card-light:hover { background: var(--stone-2); }
 .card-name {
@@ -48,7 +48,7 @@
 .card-dark {
   background: var(--charcoal); padding: 56px 48px 68px;
   position: relative; overflow: hidden;
-  transition: background 0.4s; cursor: none;
+  transition: background 0.4s;
 }
 .card-dark:hover { background: var(--char-3); }
 .card-dark .card-name { color: var(--plat); }

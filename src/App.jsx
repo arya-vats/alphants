@@ -1,12 +1,10 @@
 import { useState, useEffect } from 'react';
 import Nav from './components/Nav';
-import Cursor from './components/Cursor';
 import Hero from './sections/Hero';
 import Who from './sections/Who';
 import Band from './sections/Band';
 import What from './sections/What';
 import How from './sections/How';
-import Founder from './sections/Founder';
 import Build from './sections/Build';
 import Footer from './sections/Footer';
 
@@ -16,7 +14,7 @@ export default function App() {
   const [onDark, setOnDark] = useState(false);
 
   useEffect(() => {
-    const darkSectionIds = ['founder'];
+    const darkSectionIds = [];
 
     function update() {
       const y = window.scrollY + 90;
@@ -52,14 +50,12 @@ export default function App() {
 
   return (
     <>
-      <Cursor onDark={onDark} />
       <Nav theme={navTheme} activeSection={activeSection} />
       <Hero />
       <Who />
       <Band />
       <What />
       <How />
-      <Founder />
       <Build />
       <Footer />
     </>
