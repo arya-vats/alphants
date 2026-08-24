@@ -1,9 +1,9 @@
 #what { padding: 130px 56px; background: var(--white); }
-.what-header { margin-bottom: 80px; }
+.what-header { margin-bottom: 40px; }
 .what-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(48px, 5.5vw, 80px); font-weight: 300;
-  line-height: 1.0; color: var(--ink); margin-top: 16px; max-width: 540px;
+  font-size: clamp(40px, 4.6vw, 66px); font-weight: 300;
+  line-height: 1.0; color: var(--ink); margin-top: 16px; max-width: none;
 }
 .what-title em { font-style: italic; color: var(--stroke); }
 .lbl-light {
@@ -20,12 +20,12 @@
 }
 .card-light:hover { background: var(--stone-2); }
 .card-name {
-  font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 400;
+  font-family: 'Cormorant Garamond', serif; font-size: 38px; font-weight: 400;
   color: var(--ink); margin-bottom: 10px; line-height: 1.1;
 }
 .card-sub {
   position: relative;
-  font-family: 'Cormorant Garamond', serif; font-size: 15px;
+  font-family: 'Cormorant Garamond', serif; font-size: 19px;
   font-style: italic; color: var(--stroke); margin-bottom: 38px; line-height: 1.5; opacity: 0.8;
 }
 .card-sub::after {
@@ -37,12 +37,26 @@
   background: var(--line-ls);
   bottom: -12px;
 }
-.card-txt { font-size: 13.5px; line-height: 1.95; color: var(--ink-soft); }
+.card-txt { font-size: 15.5px; line-height: 1.9; color: var(--ink-soft); }
+.card-txt + .card-txt { margin-top: 14px; }
 .card-bar {
   position: absolute; bottom: 0; left: 0; width: 0; height: 2px;
   background: var(--stroke); transition: width 0.5s;
 }
 .card-light:hover .card-bar { width: 100%; }
+
+.card-dark {
+  background: var(--charcoal); padding: 56px 48px 68px;
+  position: relative; overflow: hidden;
+  transition: background 0.4s; cursor: none;
+}
+.card-dark:hover { background: var(--char-3); }
+.card-dark .card-name { color: var(--plat); }
+.card-dark .card-sub { color: var(--hero-warm, #b8924a); opacity: 1; }
+.card-dark .card-sub::after { background: var(--line-d); }
+.card-dark .card-txt { color: var(--plat-soft); }
+.card-dark .card-bar { background: var(--hero-warm, #b8924a); }
+.card-dark:hover .card-bar { width: 100%; }
 
 @media (max-width: 1024px) {
   #what { padding: 100px 24px; }

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Nav from './components/Nav';
+import Cursor from './components/Cursor';
 import Hero from './sections/Hero';
 import Who from './sections/Who';
 import Band from './sections/Band';
@@ -51,6 +52,7 @@ export default function App() {
 
   return (
     <>
+      <Cursor onDark={onDark} />
       <Nav theme={navTheme} activeSection={activeSection} />
       <Hero />
       <Who />

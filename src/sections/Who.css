@@ -1,97 +1,11 @@
-#who { padding: 130px 56px; background: var(--stone); }
-.who-inner {
-  display: grid;
-  grid-template-columns: 0.9fr 1.4fr;
-  gap: 96px;
-  align-items: start;
-}
-.who-left { position: sticky; top: 110px; }
+#who { padding: 80px 56px 130px; background: var(--stone); }
+
 .who-title {
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(48px, 5.5vw, 80px); font-weight: 300;
   line-height: 1.0; color: var(--ink); margin-top: 16px;
 }
 .who-title em { font-style: italic; color: var(--stroke); }
-.who-accent {
-  margin-top: 40px; padding: 22px 26px;
-  border: 1px solid var(--line-ls); border-left: 2px solid var(--stroke);
-  background: rgba(20,19,18,0.03);
-}
-.who-accent p {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 15px; font-style: italic; line-height: 1.7; color: var(--stroke);
-}
-.who-right {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-}
-.who-left .mission-box {
-  margin-top: 32px;
-}
-.story-card {
-  padding: 34px 36px;
-  border: 1px solid var(--line-ls);
-  background: linear-gradient(180deg, rgba(20,19,18,0.025), rgba(20,19,18,0.01));
-}
-.body-p {
-  font-size: 14.5px;
-  line-height: 1.95;
-  color: var(--ink-soft);
-  margin: 0 0 18px;
-}
-.body-p:last-child { margin-bottom: 0; }
-.body-p strong { color: var(--ink); font-weight: 400; }
-
-.convener-grid {
-  display: grid;
-  grid-template-columns: 1.3fr 0.8fr;
-  gap: 20px;
-}
-.definition-block {
-  padding: 24px 26px;
-  border: 1px solid var(--line-ls);
-  background: var(--stone-2);
-}
-.accent-block {
-  background: rgba(20,19,18,0.05);
-}
-.block-label {
-  font-family: 'Courier Prime', monospace;
-  font-size: 11px;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  color: var(--stroke);
-  margin-bottom: 14px;
-  opacity: 0.82;
-}
-
-.mission-box {
-  padding: 36px 40px; background: var(--stone-2);
-  border: 1px solid var(--line-ls); position: relative; overflow: hidden;
-}
-.mission-box::before {
-  content: '"'; position: absolute; top: -28px; left: 16px;
-  font-family: 'Cormorant Garamond', serif; font-size: 200px; font-weight: 300;
-  color: rgba(20,19,18,0.04); line-height: 1; pointer-events: none;
-}
-.mission-lbl {
-  font-family: 'Courier Prime', monospace; font-size: 9px;
-  letter-spacing: 0.3em; text-transform: uppercase;
-  color: var(--stroke); margin-bottom: 14px; opacity: 0.7;
-  font-size: 12px;
-}
-.mission-txt {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(20px, 2.2vw, 28px); font-weight: 300;
-  font-style: italic; line-height: 1.55; color: var(--ink); position: relative; z-index: 1;
-}
-.who-tagline {
-  font-family: 'Cormorant Garamond', serif; font-size: 20px;
-  font-weight: 300; font-style: italic;
-  color: var(--stroke); text-align: right;
-  padding-top: 16px; border-top: 1px solid var(--line-ls);
-}
 
 .lbl-light {
   font-family: 'Courier Prime', monospace; font-size: 16px;
@@ -99,9 +13,64 @@
   color: var(--stroke); margin-bottom: 24px; opacity: 0.7;
 }
 
+.who-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 40px;
+  align-items: stretch;
+}
+
+.body-p { margin: 0; }
+
+.who-dark {
+  background: var(--charcoal);
+  padding: 48px 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mission-lbl {
+  font-family: 'Courier Prime', monospace; font-size: 11px;
+  letter-spacing: 0.24em; text-transform: uppercase;
+  color: var(--hero-warm, #b8924a); margin: 0 0 20px;
+}
+.mission-txt {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(20px, 2vw, 27px); font-weight: 300; font-style: italic;
+  line-height: 1.45; color: var(--plat);
+}
+.mission-divider {
+  width: 56px; height: 1px;
+  background: var(--hero-warm, #b8924a);
+  margin-top: 24px;
+}
+
+.who-light { padding: 16px 8px; }
+.who-light .body-p {
+  font-size: 15px; line-height: 1.8; color: var(--ink-soft);
+  max-width: 520px; margin: 0 0 20px;
+}
+.who-light .body-p.final-p { color: var(--ink); font-weight: 500; margin-bottom: 28px; }
+
+.callout-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--stroke-lt);
+  padding-top: 20px;
+}
+.callout-block { padding-right: 20px; }
+.callout-block.bordered {
+  padding-right: 0; padding-left: 20px;
+  border-left: 1px solid var(--stroke-lt);
+}
+.block-label {
+  font-family: 'Courier Prime', monospace; font-size: 10px;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: #7A5A28; margin: 0 0 8px;
+}
+.callout-block .body-p { font-size: 13px; line-height: 1.6; color: #5a5148; max-width: none; margin: 0; }
+
 @media (max-width: 1024px) {
   #who { padding: 100px 24px; }
-  .who-inner { grid-template-columns: 1fr; gap: 48px; }
-  .who-left { position: static; }
-  .convener-grid { grid-template-columns: 1fr; }
+  .who-grid { grid-template-columns: 1fr; gap: 24px; }
 }

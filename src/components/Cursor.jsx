@@ -39,7 +39,7 @@ export default function Cursor({ onDark }) {
   }, []);
 
   useEffect(() => {
-    const els = document.querySelectorAll('a,button,.card-light,.build-card,.trio-row,.step');
+    const els = document.querySelectorAll('a,button,.card-light,.card-dark,.build-card,.trio-row,.step');
     const enter = () => {
       if (ringRef.current) ringRef.current.style.transform = 'translate(-50%,-50%) scale(1.8)';
     };
