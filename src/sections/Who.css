@@ -1,5 +1,5 @@
 #who {
-  padding: 130px 56px;
+  padding: 56px 56px 28px;
   background: var(--stone);
   display: flex;
   flex-direction: column;
@@ -40,25 +40,49 @@
 .mission-lbl {
   font-family: 'Courier Prime', monospace; font-size: 13px;
   letter-spacing: 0.24em; text-transform: uppercase;
-  color: var(--hero-warm, #b8924a); margin: 0 0 20px;
+  color: var(--hero-warm, #b8924a); margin: 0 0 18px;
 }
 .mission-txt {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(24px, 2.4vw, 32px); font-weight: 300; font-style: italic;
-  line-height: 1.45; color: var(--plat);
+  font-size: clamp(22px, 2.1vw, 27px); font-weight: 300; font-style: italic;
+  line-height: 1.4; color: var(--plat);
 }
 .mission-divider {
   width: 56px; height: 1px;
   background: var(--hero-warm, #b8924a);
-  margin-top: 24px;
+  margin: 28px 0;
 }
+.belief-lbl {
+  font-family: 'Courier Prime', monospace; font-size: 13px;
+  letter-spacing: 0.24em; text-transform: uppercase;
+  color: var(--hero-warm, #b8924a); margin: 0 0 14px;
+}
+.belief-txt { font-size: 14px; line-height: 1.75; color: var(--plat-soft); margin: 0; }
 
 .who-light { padding: 16px 8px; }
 .who-light .body-p {
   font-size: 15px; line-height: 1.8; color: var(--ink-soft);
   text-align: justify; text-justify: inter-word; margin: 0 0 20px;
 }
-.who-light .body-p.final-p { color: var(--ink); font-weight: 500; margin-bottom: 0; }
+.who-light .body-p.final-p { color: var(--ink); font-weight: 500; margin-bottom: 28px; }
+
+.pillars { border-top: 1px solid var(--stroke-lt); padding-top: 24px; }
+.pillars-lbl {
+  font-family: 'Courier Prime', monospace; font-size: 12px;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: #7A5A28; margin: 0 0 6px;
+}
+.pillars-sub {
+  font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 16px;
+  color: #5a5148; margin: 0 0 20px;
+}
+.pillar { margin-bottom: 18px; }
+.pillar:last-child { margin-bottom: 0; }
+.pillar-name {
+  font-family: 'Cormorant Garamond', serif; font-size: 19px;
+  color: var(--ink); margin: 0 0 4px;
+}
+.pillar-txt { font-size: 14px; line-height: 1.65; color: #5a5148; margin: 0; }
 
 @media (max-width: 1024px) {
   #who { padding: 100px 24px; }
