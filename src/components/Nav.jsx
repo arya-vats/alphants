@@ -1,7 +1,10 @@
+import { useState } from 'react';
 import './Nav.css';
 import logoUrl from '../assets/alphants.png';
 
 export default function Nav({ theme, activeSection }) {
+  const [open, setOpen] = useState(false);
+
   const links = [
     { href: '#who', label: 'Who We Are' },
     { href: '#what', label: 'What We Design' },
@@ -29,6 +32,36 @@ export default function Nav({ theme, activeSection }) {
       </ul>
 
       <a href="#build" className="nav-cta">Start a Conversation</a>
+
+      <button
+        className={`nav-burger${open ? ' open' : ''}`}
+        aria-label="Toggle menu"
+        aria-expanded={open}
+        onClick={() => setOpen(o => !o)}
+      >
+        <span />
+        <span />
+        <span />
+      </button>
+
+      <div className={`nav-mobile${open ? ' open' : ''}`}>
+        <ul className="nav-mobile-links">
+          {links.map(l => (
+            <li key={l.href}>
+              <a
+                href={l.href}
+                className={activeSection === l.href.slice(1) ? 'active' : ''}
+                onClick={() => setOpen(false)}
+              >
+                {l.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <a href="#build" className="nav-cta nav-mobile-cta" onClick={() => setOpen(false)}>
+          Start a Conversation
+        </a>
+      </div>
     </nav>
   );
 }
