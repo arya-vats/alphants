@@ -4,7 +4,7 @@ import logoUrl from '../assets/alphants.png';
 export default function Nav({ theme, activeSection }) {
   const links = [
     { href: '#who', label: 'Who We Are' },
-    { href: '#what', label: 'What We Enable' },
+    { href: '#what', label: 'What We Design' },
     { href: '#how', label: 'How We Design' },
   ];
 

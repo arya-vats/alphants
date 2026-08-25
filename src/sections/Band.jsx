@@ -6,8 +6,7 @@ export default function Band() {
       <div className="band-grid" />
       <div className="band-content">
         <p className="band-quote">
-          We bring the right people together.<br />
-          <span>Then we see what becomes possible.</span>
+          We bring the right people together. <span>Then we see what becomes possible.</span>
         </p>
       </div>
     </div>

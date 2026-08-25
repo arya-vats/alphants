@@ -13,16 +13,16 @@ const cards = [
   {
     label: 'Join the Team',
     title: 'Careers',
-    text: 'Join people who take rooms as seriously as we do, and who think the same way about what a gathering can do.',
+    text: "We stay small by design, and we grow with people who think about rooms the way we do. If that's you, we'd love to hear from you.",
     link: 'mailto:as@alphantsnetwork.com',
-    linkText: 'View opportunities',
+    linkText: 'Get in touch',
   },
   {
     label: 'Get in Touch',
     title: 'Contact',
     text: 'Every gathering starts with a conversation. We respond to every message personally.',
-    link: 'mailto:as@alphantsnetwork.com',
-    linkText: 'as@alphantsnetwork.com',
+    link: 'mailto:welcome@alphantsnetwork.com',
+    linkText: 'welcome@alphantsnetwork.com',
   },
 ];
 
