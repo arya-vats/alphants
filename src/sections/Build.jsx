@@ -13,7 +13,7 @@ const cards = [
   {
     label: 'Join the Team',
     title: 'Careers',
-    text: "We stay small by design, and we grow with people who think about rooms the way we do. If that's you, we'd love to hear from you.",
+    text: "There's no formal process for this one. If you have a question, an idea, or just want to say hello, feel free to reach out directly.",
     link: 'mailto:as@alphantsnetwork.com',
     linkText: 'Get in touch',
   },
