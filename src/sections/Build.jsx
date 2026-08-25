@@ -13,7 +13,7 @@ const cards = [
   {
     label: 'Join the Team',
     title: 'Careers',
-    text: "There's no formal process for this one. If you have a question, an idea, or just want to say hello, feel free to reach out directly.",
+    text: "If you have a question, an idea, or just want to say hello, feel free to reach out directly.",
     link: 'mailto:as@alphantsnetwork.com',
     linkText: 'Get in touch',
   },
